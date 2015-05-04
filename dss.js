@@ -406,7 +406,7 @@ dss.parser('markup', function(i, line, block, file){
       if (lines.length <= 2)
         line = dss.trim(line);
 
-      if (line && line != '@markup')
+      if (line && line.indexOf('@markup') === -1)
         ret.push(line);
 
     });
